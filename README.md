@@ -46,8 +46,6 @@ with tf.Session() as sess:
               batch_size=1000, n_epoches=20, corrupt_lvs=[0.1, 0.1])
     sda.pretrain(sess, train_x, test_x, pretrained=False)
     sda.finetune(sess, train_x, train_y, test_x, test_y, pretrained=True)
-
-    test_sample     = test_x[0:10]
     reconstructed_x = sda.get_reconstructed_x(sess, test_sample)
 
     # Plot reconstructed mnist figures
