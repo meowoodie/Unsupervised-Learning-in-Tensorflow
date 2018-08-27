@@ -5,7 +5,7 @@ Deep Learning Models in tensorflow
 It is a repository for compiling most of my deep learning implementations in Tensorflow, which includes Stacked Denoising Autoencoders, and so on.
 
 ### Stacked Denoising Autoencoders
-Below is a simple example for fitting a vanilla Denoising Autoencoder. Also the `dA` provides methods for reconstructing and calculating the hidden output (encode). Moreover, we use the MNIST dataset as the test set in order to compare the performance.
+Below is a simple example for fitting a vanilla Denoising Autoencoder. Also the `dA` provides methods for reconstructing and calculating the hidden output (encode). Moreover, we use the MNIST dataset for the unit testing in order to compare the performance.
 ```python
 # An unittest on MNIST data for Denoising Autoencoder
 
