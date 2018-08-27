@@ -54,7 +54,7 @@ with tf.Session() as sess:
     show_mnist_images(reconstructed_x)
     show_mnist_images(test_sample)
 ```
-Here, console output has also been attached here for your reference. The log information presents the process of the convergence in pretrain and finetune.
+Here console output has also been attached for your reference. The log information presents the process of the convergence in pretrain and finetune.
 ```bash
 [2018-08-26T23:19:06.793786-04:00] --- Pre-train Phase ---
 [2018-08-26T23:19:06.794408-04:00] *** Layer (stacked_layer_0_dA) ***
