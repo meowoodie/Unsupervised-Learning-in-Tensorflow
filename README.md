@@ -28,7 +28,6 @@ with tf.Session() as sess:
     # Single Denoising Autoencoder
     # - This is the best params that I can find for reconstructing the
     #   best quality of images
-
     da = dA('test', n_visible, n_hidden,
              keep_prob=0.05, lr=0.01, batch_size=1000, n_epoches=25, corrupt_lv=0.1)
     da.fit(sess, train_x, test_x)
@@ -47,7 +46,6 @@ with tf.Session() as sess:
     sda.pretrain(sess, train_x, test_x, pretrained=False)
     sda.finetune(sess, train_x, train_y, test_x, test_y, pretrained=True)
     reconstructed_x = sda.get_reconstructed_x(sess, test_sample)
-
     # Plot reconstructed mnist figures
     show_mnist_images(reconstructed_x)
     show_mnist_images(test_sample)
