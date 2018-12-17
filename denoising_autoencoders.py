@@ -105,7 +105,7 @@ class dA(object):
         # abort the program
         # if the batch size is indivisible w.r.t the size of dataset,
         # or input tensor is undefined when the dA is stacked.
-        assert not n_trains % self.batch_size, 'Indivisible batch size.'
+        # assert not n_trains % self.batch_size, 'Indivisible batch size.'
         assert n_tests > self.batch_size, 'Size of test data should be larger than batch size.'
         assert (not self.is_stacked) or (input_tensor is not None), 'Input tensor is undefined since the dA is stacked.'
         # train iteratively
